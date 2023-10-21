@@ -1,0 +1,17 @@
+{
+    "version": 2,
+    "settings": {},
+    "styles": {
+        "blocks":{
+            "core/post-title": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--source-serif-pro)",
+					"fontWeight": "400",
+					"lineHeight": "var(--wp--custom--typography--line-height--tiny)",
+					"fontSize": "var(--wp--custom--typography--font-size--gigantic)"
+				}
+			}}
+    },
+    "customTemplates": {},
+    "templateParts": {}
+}
