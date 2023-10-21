@@ -1,17 +1,110 @@
 {
     "version": 2,
-    "settings": {},
-    "styles": {
+    "settings": { 
+        "typography":{
+            "fontFamilies": [
+                {
+                    "name": "Primary",
+					"slug": "primary",
+					"fontFamily": "Montserrat, Helvetica, 'Times New Roman'",
+                    "fontFace": [
+						{
+							"fontFamily": "Montserrat",
+							"fontWeight": "300 800",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [ "file:./assets/Montserrat/Montserrat-VariableFont_wght.ttf" ]
+						},
+						{
+							"fontFamily": "Montserrat",
+							"fontWeight": "300 800",
+							"fontStyle": "italic",
+							"fontStretch": "normal",
+							"src": [ "file:./assets/Montserrat/Montserrat-Italic-VariableFont_wght.ttf" ]
+						}
+					]
+                }
+            ]
+        },
+        "color": {
+            "defaultPalette": false,
+            "defaultDuotone": false,
+            "defaultGradients": false,
+            "palette": [
+                {
+                    "name": "Magenta",
+                    "slug": "magenta",
+                    "color": "#FF00FF"
+                },
+                {
+                    "name": "Cyan",
+                    "slug": "cyan",
+                    "color": "#00FFFF"
+                },
+                {
+                    "name": "Yellow",
+                    "slug": "yellow",
+                    "color": "#FFFF00"
+                }
+            ]
+        },           
         "blocks":{
-            "core/post-title": {
-				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--source-serif-pro)",
-					"fontWeight": "400",
-					"lineHeight": "var(--wp--custom--typography--line-height--tiny)",
-					"fontSize": "var(--wp--custom--typography--font-size--gigantic)"
-				}
-			}}
+            "core/paragraph": {
+                "color": {
+                    "palette": [
+                        {
+                            "name": "Bluey",
+                            "slug": "blue",
+                            "color": "#0000FF"
+                        },
+                        {
+                            "name": "Red",
+                            "slug": "red",
+                            "color": "#FF0000"
+                        },
+                        {
+                            "name": "Green",
+                            "slug": "green",
+                            "color": "#00FF00"
+                        }
+                    ]
+                }
+            }
+        }
     },
-    "customTemplates": {},
-    "templateParts": {}
+    "styles": {
+        "typography": {
+            "fontFamily": "Montserrat",
+            "fontSize": "1.25rem",
+            "fontStyle": "italic",
+            "fontWeight": "300",
+            "letterSpacing": "0",
+            "lineHeight": "1.6",
+            "textDecoration": "none"
+        },
+        "color": {
+            "background": "#F0FF00"
+        },
+        "blocks":{
+            "core/paragraph": {
+				"color": {
+                    "text": "#ABCDEF",
+                    "background": "#000001"
+				}
+			},
+            "core/list": {
+				"color": {
+                    "text": "#FF00FF",
+                    "background": "#777770"
+				}
+			}
+        }
+    },
+    "templateParts": [
+        {
+            "name": "header-test",
+            "title": "Header (Custom)",
+            "area": "header"
+        }
+    ]
 }
