@@ -97,7 +97,11 @@
                     "text": "#FF00FF",
                     "background": "#777770"
 				}
-			}
+			},
+            "core/navigation": {
+                "shadow": "0 10px 20px 0 rgb(50 50 50 / 0.05)",
+                "css": "float: right;"
+            }
         }
     },
     "templateParts": [
